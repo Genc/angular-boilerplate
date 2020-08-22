@@ -1,0 +1,15 @@
+<div class="container">
+
+    <div class="jumbotron mt-5">
+
+        <h1 class="display-4 text-center"> {{ 'global.welcome_message_header' | translate }} </h1>
+        <p class="lead mt-2 text-center text-success"> {{ 'global.welcome_message_body' | translate }} </p>
+
+        <hr class="my-4">
+
+        <div class="d-flex justify-content-center">
+            <button (click)="logout()" class="btn btn-danger btn-lg"> {{ 'global.logout' | translate }} </button>
+        </div>
+    </div>
+
+</div>

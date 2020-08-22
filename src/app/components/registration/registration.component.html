@@ -1,0 +1,45 @@
+<div class="container mt-3">
+    <form class=" form-register" [formGroup]="registerForm" (ngSubmit)="register()">
+        <div class="text-center mb-4">
+            <h1 class="h3 mb-3 font-weight-normal">{{ 'global.register' | translate }}</h1>
+            <p>{{ 'registration.description' | translate }}</p>
+        </div>
+
+        <div class="form-label-group">
+            <input type="text" id="inputName" class="form-control" placeholder="{{ 'registration.name' | translate }}" required autofocus
+                   autocomplete="off" formControlName="name">
+            <label for="inputName">{{ 'registration.name' | translate }}</label>
+            <div class="alert alert-danger mt-2" *ngIf="invalidName()"> {{ 'validations.name' | translate }}</div>
+        </div>
+
+        <div class="form-label-group">
+            <input type="email" id="inputEmail" class="form-control" placeholder="{{ 'registration.email' | translate }}" required autofocus
+                   autocomplete="off" formControlName="email">
+            <label for="inputEmail">{{ 'registration.email' | translate }}</label>
+            <div class="alert alert-danger mt-2" *ngIf="invalidEmail()"> {{ 'validations.email' | translate }}</div>
+        </div>
+
+        <div class="form-label-group">
+            <input type="text" id="inputUsername" class="form-control" placeholder="{{ 'registration.username' | translate }}" required autofocus
+                   autocomplete="off" formControlName="username">
+            <label for="inputUsername">{{ 'registration.username' | translate }}</label>
+            <div class="alert alert-danger mt-2" *ngIf="invalidUsername()"> {{ 'validations.username' | translate }}</div>
+        </div>
+
+        <div class="form-label-group">
+            <input type="password" id="inputPassword" class="form-control" placeholder="{{ 'registration.password' | translate }}" required
+                   autocomplete="off" formControlName="password">
+            <label for="inputPassword">{{ 'registration.password' | translate }}</label>
+            <div class="alert alert-danger mt-2" *ngIf="invalidPassword()">{{ 'validations.password' | translate }}</div>
+        </div>
+
+        <button class="btn btn-lg btn-primary btn-block" type="submit" [disabled]="isDisableRegisterButton()">
+            {{ 'global.register' | translate }}
+        </button>
+    </form>
+
+    <div class="d-flex justify-content-center">
+        <p class="text-center text-dark mt-2"> {{ 'global.already_member' | translate }}
+            <a [routerLink]="['/login']" class="text-danger">{{ 'global.login' | translate }}</a></p>
+    </div>
+</div>

@@ -1,0 +1,14 @@
+<div class="container mt-5">
+
+    <div class="d-flex justify-content-center">
+        <h1 class="display-4"> {{ 'homepage.title' | translate }} </h1>
+    </div>
+
+    <hr class="my-4">
+
+    <div class="d-flex justify-content-center">
+        <a [routerLink]="['/register']" class="btn btn-info btn-lg my-2 mr-2">  {{ 'global.register' | translate}} </a>
+        <a [routerLink]="['/login']" class="btn btn-danger btn-lg my-2"> {{ 'global.login' | translate}} </a>
+    </div>
+
+</div>

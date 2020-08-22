@@ -1,0 +1,32 @@
+{
+  "global": {
+    "register": "Kayıt ol",
+    "login": "Giriş yap",
+    "logout": "Çıkış Yap",
+    "already_member": "Zaten üye misiniz?",
+    "create_new_account": "Yeni hesap oluştur",
+    "welcome_message_header" : "Hoş geldiniz!",
+    "welcome_message_body" : "Başarıyla giriş yaptınız."
+  },
+  "homepage": {
+    "title": "Angular Boilerplate"
+  },
+  "registration": {
+    "description": "Ücretsiz bir şekilde yeni bir hesap oluştur!",
+    "name": "İsim",
+    "email": "Email adresi",
+    "username": "Kullanıcı adı",
+    "password": "Şifre"
+  },
+  "validations": {
+    "name": "Lütfen isim giriniz",
+    "email": "Lütfen email giriniz",
+    "username": "Lütfen kullanıcı adı giriniz",
+    "password": "Lütfen şifre giriniz"
+  },
+  "not_found_page": {
+    "header": "OOPS!",
+    "not_found_message": "Aradığınız sayfa bulunamadı.",
+    "go_to_dashboard_button": "Ana sayfaya dönün"
+  }
+}

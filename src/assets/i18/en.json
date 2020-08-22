@@ -1,0 +1,32 @@
+{
+  "global": {
+    "register": "Register",
+    "login": "Login",
+    "logout": "Logout",
+    "already_member": "Are you already a member?",
+    "create_new_account": "Create new account",
+    "welcome_message_header" : "You're welcome!",
+    "welcome_message_body" : "You have successfully logged in."
+  },
+  "homepage": {
+    "title": "Angular Boilerplate"
+  },
+  "registration": {
+    "description": "Create a free account!",
+    "name": "Name",
+    "email": "Email address",
+    "username": "Username",
+    "password": "Password"
+  },
+  "validations": {
+    "name": "Please enter a name",
+    "email": "Please enter an email",
+    "username": "Please enter a username",
+    "password": "Please enter a password"
+  },
+  "not_found_page": {
+    "header": "OOPS!",
+    "not_found_message": "Page Not Found",
+    "go_to_dashboard_button": "GO TO DASHBOARD"
+  }
+}
