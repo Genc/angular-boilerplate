@@ -7,6 +7,7 @@
 - Auth Guard
 - Custom Http Interceptor
 - ngx-translate
+- Bootstrap
 
 ## Run the Application
 
